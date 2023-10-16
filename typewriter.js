@@ -9,11 +9,8 @@ const typeWriter = (text) => {
   for (let i = 0; i < text.length; i++) {
     setTimeout(() => {
       process.stdout.write(text[i]);
-
       // If it's the last character, add a newline
-      if (i === text.length - 1) {
-        console.log();
-      }
+      i === text.length -1 && console.log();
     }, i * 50); // 50ms delay between characters
   }
 }
