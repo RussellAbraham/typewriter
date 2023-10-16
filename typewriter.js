@@ -1,4 +1,8 @@
-const sentence = "hello there from lighthouse labs";
+/**
+ * Simulates a typewriter effect by printing each character of the given text with a delay.
+ *
+ * @param {string} text - The text to be animated.
+ */
 
 const typeWriter = (text) => {
   // Loop through each character with a delay
@@ -13,5 +17,7 @@ const typeWriter = (text) => {
     }, i * 50); // 50ms delay between characters
   }
 }
+
+const sentence = "hello there from lighthouse labs";
 
 typeWriter(sentence)
